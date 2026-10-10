@@ -1,0 +1,19 @@
+# Testing Evidence
+
+This folder contains evidence collected from actual test calls of the Home Credit AI Voice Agent built using Retell AI.
+
+## Evidence Categories
+
+* **Eligible customer:** Evidence showing the agent collecting the required information and routing a qualified customer to the senior loan expert.
+* **Disqualification:** Evidence showing the agent identifying an ineligible condition and ending the fresh-loan screening flow.
+* **Loan transfer:** Evidence showing the agent recognizing an existing property loan or EMI-reduction request and routing it to the appropriate specialist.
+* **Callback:** Evidence showing the agent confirming a callback time when the customer is busy.
+* **Additional scenarios:** Evidence of loan-limit handling, answer corrections, and out-of-order responses, where available.
+
+## Evidence Integrity
+
+All screenshots and transcripts must come from actual test calls. Each evidence item should correspond to a test case in `test_results.csv`.
+
+Sensitive customer information, credentials, API keys, and private phone numbers must not be published.
+
+Only evidence that has actually been collected is included in this folder.
