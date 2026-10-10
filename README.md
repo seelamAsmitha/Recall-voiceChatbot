@@ -1,41 +1,60 @@
-# Recall-voiceChatbot
-AI Voice Agent for Home Credit – Prompt Engineering Internship Assignment
 # Home Credit AI Voice Agent
+
+**Prompt Engineering Internship Assignment**
 
 ## Project Overview
 
-This project implements an AI voice agent designed to conduct preliminary eligibility screening for Home Credit's Loan Against Property (LAP) offering.
+This project implements an AI voice agent using Retell AI for preliminary screening of customers interested in a pre-approved Loan Against Property (LAP) offer from Home Credit.
+
+The agent collects eligibility information, validates customer responses, handles interruptions and corrections, identifies disqualifying conditions, and routes customers to the appropriate human specialist.
 
 ## Objectives
 
-* Verify the customer before discussing offer details.
+* Conduct customer verification before discussing offer details.
 * Collect and validate the required eligibility information.
-* Identify disqualified applicants based on the defined rules.
-* Route existing property-loan transfer or EMI-reduction requests to a specialist.
-* Handle interruptions, callback requests, and out-of-order answers.
+* Handle out-of-order answers and customer corrections.
+* Identify disqualifying conditions and end the fresh-loan screening flow appropriately.
+* Route existing property-loan, EMI-reduction, and loan-transfer requests to a specialist.
+* Hand off eligible customers to a senior loan expert.
 
-## Tools Used
+## Technology Used
 
-* Retell AI – Voice agent creation and call testing
-* GitHub – Project documentation and version control
+* Retell AI — Voice agent creation and testing.
+* GitHub — Project documentation and version control.
 
 ## Repository Contents
 
-* `system_prompt.txt` – Final deployed agent prompt
-* `approach_document.md` – Agent design and conversation logic
-* `test_results.csv` – Test scenarios and actual outcomes
-* `evidence/` – Selected testing evidence, if included
+* `system_prompt.txt` — Final system prompt for the voice agent.
+* `approach_document.md` — Agent design and conversation logic.
+* `test_results.csv` — Test scenarios and actual outcomes.
+* `evidence/` — Selected screenshots and transcripts from actual test calls, when available.
 
-## Demo and Evidence
+## Eligibility Rules
 
-* Retell call/demo link: [Add your shareable link]
-* Successful call transcript: [Add link]
-* Additional testing evidence: [Add link or describe files]
+* Eligible property types: residential, commercial, and industrial.
+* Ownership: sole or joint.
+* Original property documents must be available.
+* Maximum loan amount in this screening flow: ₹75 lakh, subject to customer acceptance if a higher amount was requested.
+* Eligible occupations: salaried and self-employed.
+* Income must be received through a bank; cash-only income is disqualifying.
+* Property market value is recorded for further assessment.
+* Acceptable tenure: 3–15 years, inclusive.
+
+## Demo and Submission Evidence
+
+* Retell demo/call recording: https://agent.retellai.com/orb/agent_2d44ad19bbfa40a5059e50f903?token=3da13e4a0f7f232ac599a01f3d0d0ea1
+* Call logs/transcript: [Add your actual shareable link, if available]
 
 ## Testing
 
-The agent is tested against eligible and ineligible customers, loan-transfer requests, callback requests, corrections, and out-of-order responses. Test results are documented in the repository.
+The agent is evaluated against eligible and ineligible applicants, loan-transfer requests, callback requests, corrections, and out-of-order answers.
 
-## Note
+Actual test outcomes are documented in `test_results.csv`. Only executed tests are marked as passed or failed.
 
-This is an internship assignment prototype. Final loan eligibility and loan terms must be confirmed by the authorized Home Credit team.
+## Limitations
+
+This agent performs preliminary screening only. It does not guarantee loan approval or provide unverified interest rates, fees, or loan terms. Final decisions and confirmed terms must come from the authorized loan team.
+
+## Author
+
+S. Asmitha Reddy
