@@ -1,0 +1,17 @@
+
+Test_ID,Scenario,Customer_Input_Summary,Expected_Result,Actual_Result,Status,Evidence_Link,Notes
+TC01,Fully eligible customer,"Residential property; sole owner; original documents; ₹50 lakh requested; salaried; income through bank; ₹1 crore market value; 10-year tenure","Collect and validate all required information; route to senior loan expert","Not executed yet",NOT RUN,,
+TC02,Agricultural property,"Customer says the property is agricultural","Identify disqualifying property type and politely end fresh-loan screening","Not executed yet",NOT RUN,,
+TC03,Cash-only income,"Customer receives income only in cash","Identify disqualifying income mode and politely end fresh-loan screening","Not executed yet",NOT RUN,,
+TC04,Original documents unavailable,"Customer has only photocopies or no property documents","Identify document requirement failure and politely end fresh-loan screening","Not executed yet",NOT RUN,,
+TC05,Tenure below minimum,"Customer requests a 2-year tenure","Identify tenure below 3 years and end fresh-loan screening","Not executed yet",NOT RUN,,
+TC06,Tenure above maximum,"Customer requests a 20-year tenure","Identify tenure above 15 years and end fresh-loan screening","Not executed yet",NOT RUN,,
+TC07,Loan amount above maximum,"Customer requests ₹90 lakh and then agrees to continue with ₹75 lakh","Explain the ₹75 lakh maximum; continue only after customer agrees; then complete screening","Not executed yet",NOT RUN,,
+TC08,Joint property ownership,"Customer confirms the property is jointly owned and provides otherwise eligible answers","Accept joint ownership and continue screening","Not executed yet",NOT RUN,,
+TC09,Existing property loan,"Customer says they already have a loan against the property","Route to loan-transfer specialist and stop fresh-loan screening","Not executed yet",NOT RUN,,
+TC10,EMI reduction or transfer,"Customer wants to reduce an existing property-loan EMI or transfer the loan","Route to the appropriate specialist and stop fresh-loan screening","Not executed yet",NOT RUN,,
+TC11,Out-of-order answers and correction,"Customer answers several questions together and later corrects an answer","Remember supplied answers; update corrected value; ask only for missing information; apply eligibility rules","Not executed yet",NOT RUN,,
+TC12,Customer is busy,"Customer says they are busy and provides a callback time","Confirm callback time, thank the customer, and end without continuing the pitch","Not executed yet",NOT RUN,,
+TC13,Contradictory property type,"Customer first says residential, then corrects the answer to agricultural","Use the latest answer and disqualify the fresh-loan application","Not executed yet",NOT RUN,,
+TC14,Question about interest rate,"Customer asks for the interest rate before screening is complete","Do not invent a rate; explain that the loan expert will provide confirmed details; resume screening appropriately","Not executed yet",NOT RUN,,
+TC15,All answers supplied together,"Customer gives all required eligibility answers in one response","Extract and validate every answer; do not repeat answered questions; hand off only if all requirements are satisfied","Not executed yet",NOT RUN,,
