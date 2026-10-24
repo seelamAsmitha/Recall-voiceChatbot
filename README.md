@@ -43,7 +43,7 @@ The agent collects eligibility information, validates customer responses, handle
 ## Demo and Submission Evidence
 
 * Retell demo/call recording: https://agent.retellai.com/orb/agent_2d44ad19bbfa40a5059e50f903?token=3da13e4a0f7f232ac599a01f3d0d0ea1
-* Call logs/transcript: [Add your actual shareable link, if available]
+* Call logs/transcript:https://docs.google.com/spreadsheets/d/1eLsDWSKe1MU9Vh2Rek_rEvwrOEuTqbu1/edit?usp=drive_link&ouid=105788025517471785945&rtpof=true&sd=true
 
 ## Testing
 
